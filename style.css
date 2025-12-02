@@ -1,0 +1,121 @@
+html{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  margin: 0;
+}
+
+img {
+  user-select: none; 
+  pointer-events: none; 
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 40vh 170vh;
+  grid-template-rows: 10vh 20vh 70vh;
+}
+.sidebar{
+  background-color: rgb(25,146,212);  
+  grid-row: 1 / 4;
+  grid-column: 1 / 2;
+}
+
+.sidebar-items{
+  margin-left: 1rem;
+  gap: 3.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-right: 5rem;
+  margin-top: 0.8rem;
+}
+
+.dashboard img{
+  width: 3rem;
+  height: 3rem;
+  vertical-align: middle;
+  filter: invert(1);
+}
+
+.dashboard h1{
+  color: white;
+  margin: 0;
+}
+
+.first-contents, .second-contents{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-content{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 1.5rem;
+}
+
+.sidebar-content img{
+  width: 1.3rem;
+  height: 1.3rem;
+  filter: invert(1);
+}
+
+.sidebar-content p{
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.header{
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  margin-right: 10rem;
+  margin-left: 3rem;
+  gap: 15px;
+  grid-column: 2;
+  grid-row: 1 / 2;
+}
+
+.search-icon img {
+  width: 1.5rem;  
+  height: 1.5rem;  
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.search-icon input {
+  border-radius: 40px;
+  background-color: rgb(226,232,240);
+  border: 0;
+  width: 38rem;
+  height: 2rem;
+}
+
+.notif-icon{
+  margin-left: 10rem;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.notif-icon img{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.profile-pic img{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 30px;
+
+}
+
+.profile-name p {
+  font-weight: bold;
+}
