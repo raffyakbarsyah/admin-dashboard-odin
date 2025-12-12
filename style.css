@@ -1,5 +1,5 @@
 html{
-  font-family:Arial, Helvetica, sans-serif;
+  font-family:'Drafting* Mono';
   margin: 0;
   min-height: 100%;
 }
@@ -19,6 +19,10 @@ p{
   margin: 0;
 }
 
+button{
+  font-family:'Drafting* Mono';
+}
+
 .container{
   display: grid;
   grid-template-columns: minmax(0, 0.25fr) minmax(0, 1fr);
@@ -27,7 +31,7 @@ p{
   height: 100%;
 }
 .sidebar{
-  background-color: rgb(25,146,212);  
+  background-color: rgb(132, 24, 14); 
   grid-row: 1 / 3;
   grid-column: 1 / 2;
   height: 100%;
@@ -129,7 +133,6 @@ p{
   height: 3rem;
   width: 3rem;
   border-radius: 30px;
-
 }
 
 .profile-name p {
@@ -191,7 +194,7 @@ main{
 
 .button{
   border-radius: 20px;
-  background-color: rgb(25,146,212);
+  background-color: rgb(132, 24, 14); 
   border: none;
   color: white;
   padding: 10px 30px;
@@ -207,22 +210,30 @@ main{
 
 .main-content{
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 50% 50%;
+  grid-template-columns: 1.7fr 1fr;
+  grid-template-rows: 54% 45%;
   padding-bottom: 55px;
+  gap: 10px;
+  align-items: self-end
 }
 
-.my-projects h1{
+.main-h1{
   font-size: 1.5rem;
+}
+
+.latest-post{
+  width: clamp(100%, 900px, 100%);
   grid-row: 1 / 3;
+  grid-column: 1/ 2;
 }
 
 .project-items{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 55%);
   grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-  width: 80%;
+  gap: 25px;
+  width: 85%;
+  padding-right: 0;
 }
 
 .project-container{
@@ -235,6 +246,7 @@ main{
   display: grid;
   grid-template-rows: 0.1fr 2fr 1fr;
   grid-template-columns: 1fr;
+  align-self: stretch;
 }
 
 .pro-one,.pro-two,.pro-three,.pro-four,
@@ -244,15 +256,15 @@ main{
 }
 
 .project-header{
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: bold;
   height: 1.2rem;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 5px;
 }
 
 .project-description{
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .project-icon{
@@ -267,4 +279,73 @@ main{
   height: 20px;
 }
 
+.announcements{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  align-self: start;
+  padding-top: 0;
 
+}
+
+.announcements-list{
+  background-color: white;
+  margin-right: 30px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+.announcements-text{
+  padding: 30px;
+  padding-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.announcements-header{
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+hr{
+  width: 85%;
+  margin-bottom: 0 ;
+}
+
+.desc-last{
+  padding-bottom: 20px;
+}
+
+.houses-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  background-color: white;
+  margin-right: 30px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.houses-text p{
+  font-size: 0.6rem;
+  text-align: center;
+}
+
+.house-name{
+  font-weight: bold;
+}
+
+.houses-content{
+  display: grid;
+  place-items: center; 
+  padding: 15px;
+}
+
+.houses-img img{
+  width: 3rem;
+  height: 3.3rem; 
+}
