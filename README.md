@@ -162,7 +162,3 @@ Eventually, this dashboard can be rebuilt using:
 If you enjoyed this project or found it inspiring, consider giving it a **⭐ star** — it helps a lot!
 
 ---
-
-
-🌙 Write a cinematic GoT-style version
-🇮🇩 Translate this README into Indonesian
